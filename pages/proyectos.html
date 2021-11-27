@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catsa Web</title>
-    <link rel="stylesheet" href="../css/catsa.css" />
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/272679e1b4/UntitledProject/style.css">
+    <link rel="stylesheet" href="../css/catsa1.css" />
   </head>
   <body>
     <header class="headerNavegacionProyectos">
-      <nav>
-        <div class="logoDiv">
-          <img src="../images/LogoCatsaTransparenciaBlanco.png" alt="" />
-        </div       <!-- la navegacion la idea es pasar por css-->
-        <div class="navDiv">
-          <ul>
+      <nav class="contenedor contenedorNav">
+        <div>
+          <img src="../images/LogoCatsaTransparenciaBlanco.png" alt=""/>
+        </div>
+        <div class="contenedor contenedorDivUl">
+          <ul class="contenedor">
             <li><a href="../index.html">Nosotros</a></li>
             <li><a href="infrastructura.html">Insfrastructura</a></li>
             <li><a href="experiencia.html">Experiencia</a></li>
@@ -79,55 +80,32 @@
       </div>
     </section>
     <footer class="contenedorFooter">
-      <div class="col-footer bloqueFooter">
-        <h3 class="h3Tittle">TELEFONO</h3>
-        <ul>
+      <div class="contenedorPhone" >
+        <h3 class="textFooterH3">TELÉFONO</h3>
+        <ul class="textFooterUL">
           <li>
-            <img
-              src="../images/telefono.png"
-              alt="telefono"
-              width="20px"
-              height="20px"
-            /><a href="tel:+525547442645">(+52)55 4744-2645</a>
+            <span class="icon-phone"></span> <a href="tel:+525547442645">(+52)55 4744-2645</a>
           </li>
           <li>
-            <img
-              src="../images/telefono.png"
-              alt="telefono"
-              width="20px"
-              height="20px"
-            /><a href="tel:+525547442645">(+52)55 7931–6335</a>
+            <span class="icon-phone"></span> <a href="tel:+525547442645">(+52)55 7931–6335</a>
           </li>
         </ul>
       </div>
-      <div class="col-footer bloqueFooter bloqueCentralFooter">
-         <h3 class="h3Tittle">Correo</h3>
-         <div class="footContenedoMail"> 
-         <div class="footerMail">
-           <div>
-             <img src="../images/mail.png" alt="email" width="56px" height="56px" />
-           </div>
-         </div>
-         <div class="footerMail">
-           <form action="formulario.html">
-             <button type="submit">Contactanos</button>
-           </form>
-         </div>
+      <div class="contenedorFooterBorder">
+        <h3 class="textFooterH3">CORREO</h3>
+        <div>
+          <form class="contenedorMail" action="contacto.html">
+            <span class="icon-envelop"></span>
+            <button class="buttonMail" type="submit">Contactanos</button>
+          </form>
         </div>
       </div>
-      <div class="col-footer bloqueFooter">
+      <div class="contenedorOfficer">
         <div>
-          <img
-            src="../images/building.png"
-            alt="edificio"
-            width="44px"
-            height="44px"/>
+          <span class="icon-office"></span>|
         </div>
         <div>
-          <p>
-            CONCRETOS 
-            ASFALTICOS TECAMAC, 
-            S.A. DE C.V.</p>
+          <p class="textFooterOfficer">CONCRETOS ASFALTICOS TECAMAC, S.A. DE C.V.</p>
         </div>
       </div>
     </footer>
