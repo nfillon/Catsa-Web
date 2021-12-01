@@ -206,32 +206,96 @@ section .imgAboutPosition {
 
 /* HTML Experiencias Applico Grid*/
 
-.gridContainerExpe{
+/*.divUl{*/
+/*    grid-area: divUlr;*/
+/*}*/
+
+/*.divFoto1{*/
+/*    grid-area: divFoto1;*/
+/*}*/
+
+.gridContainerExpe {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-auto-rows: 100%;
+    grid-template-areas:
+            "divFoto divExp1";
+    grid-template-rows: 50% 50% ;
+    grid-template-columns: 40% 60%;
+
 }
 
-.gridItem {
-    width: 100%;
-    border: 1px solid black;
+.item1 {
+    grid-area: divFoto;
+}
+.item2{
+    grid-area: divExp1;
+    align-items: center
+}
+.gridContainerExpe1 {
+    display: grid;
+    margin:  1% 1% 1% 1%;
+    grid-template-areas:"divH3 divH3";
+    grid-template-rows: 100%;
+    border: 1px solid darkgray;
+    background-color: lightgray;
+}
+.item3{
+    grid-area: divH3;
+    padding-top: 15%
 }
 
+.gridContainerExpe2 {
+    display: grid;
+    margin:  1% 1% 1% 1%;
+    grid-template-areas:
+            "internalUl1 internalUl2"
+            "divFoto1 DivFoto2";
+    grid-template-rows: 50% 50% 50% 50%;
+    border: 1px  solid #f7f9fa;
+    background-color: #f7f9fa;
+}
+.item4{
+    grid-area: internalUl1;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-left:  30% ;
+}
+.item5{
+    grid-area: internalUl2;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 30% ;
+
+}
+.item6{
+    grid-area: divFoto1;
+    padding-left: 30%;
+}
+.item7 {
+    grid-area: DivFoto2;
+    padding-left: 30%;
+
+}
 .imgExp1{
     width: 100%;
 }
+.h3Exp1{
+    padding-top: 2%;
+    text-align: center;
+}
+.imgExp2{
+    width: 45%;
+}
 
+.imgExp3{
+    width: 45%;
+}
 .textExpH3{
     padding-top: 5%;
     text-align: center;
 }
 .textExp1{
-    padding-left:  20%;
-    width: 70%;
     white-space: pre;
     text-align: center;
-
-
 }
 /*Comienza el footer*/
 
