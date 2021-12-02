@@ -1,100 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Catsa Web</title>
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/272679e1b4/UntitledProject/style.css">
-    <link rel="stylesheet" href="../css/catsa1.css" />
-  </head>
-  <body>
-  <header>
+    <link rel="stylesheet" href="../css/catsa1.css"/>
+</head>
+<body>
+<header>
     <nav class="contenedor contenedorNav">
-      <div class="logoDiv">
-        <img src="../images/LogoCatsaTransparenciaBlanco.png" alt=""/>
-      </div>
+        <div class="logoDiv">
+            <img src="../images/LogoCatsaTransparenciaBlanco.png" alt=""/>
+        </div>
         <div class="contenedor contenedorDivUl">
-          <ul class="contenedor">
-            <li><a href="../index.html">Nosotros</a></li>
-            <li><a href="infrastructura.html">Insfrastructura</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
+            <ul class="contenedor">
+                <li><a href="../index.html">Nosotros</a></li>
+                <li><a href="infrastructura.html">Insfrastructura</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
     </nav>
-  </header>
-    <section>
-      <h4>Contactenos</h4>
-      <div>
+</header>
+<div>
+    <h4>Contactenos</h4>
+    <div>
         <form action="">
-          <fieldset>
-            <div>
-              <label for="nombre"></label><br>
-              <input type="text" name="Nombre" id="nombre" placeholder="(*) Nombre">
-              </div>
-            <div>
-                <label for="apellido"></label><br>
-                <input type="text" name="Apellido" id="apellido" placeholder="(*) Apellido" required>
+            <div class="gridContainerContac">
+                <div class="itemName1">
+                    <label for="nombre"></label>
+                    <input class="itemName1Placeholder" type="text" name="Nombre" id="nombre" placeholder="(*) Nombre">
+                </div>
+                <div class="itemLastName">
+                    <label for="apellido"></label>
+                    <input class="itemLastName1Placeholder" type="text" name="Apellido" id="apellido" placeholder="(*) Apellido" required>
+                </div>
+                <div class="itemEmail">
+                    <label for="email"></label>
+                    <input class="itemLastEmailPlaceholder" type="email" name="Email" id="email" placeholder="(*) Correo Electronico" required>
+                </div>
+                <div class="itemPhone">
+                    <label for="telefono"></label>
+                    <input class="itemLastPhonePlaceholder" type="tel" name="Telefono" id="telefono" placeholder="(*) Telefono" required>
+                </div>
+                <div class="itemAsunto">
+                    <label for="asunto"></label>
+                    <input class="itemAsuntoPlaceholder" type="text" name="Asunto" id="asunto" placeholder="Asunto">
+                </div>
+                <div class="itemMensaje">
+                    <label for="Mensaje"></label>
+                    <textarea class="itemMensajePlaceholder" name="mensaje" rows="5" cols="20" id="Mensaje" laceholder="(*) Mensaje"></textarea>
+                </div>
+                <div class="itemTerminos">
+                    <label for="Terminos"></label>
+                        <p class="itemTerminosTexto"> Al enviar este formaulario, he leído y acepto la política de privacidad de Catsa Mexico Sa de
+                        Cv (*) </p>
+                    <input type="checkbox" name="acepta" id="Terminos" value="1"/>
+                    <input type="submit" value="Enviar">
+                </div>
             </div>
-            <div>
-              <label for="email"></label><br>
-              <input type="email" name="Email" id="email" placeholder="(*) Correo Electronico" required>
-            </div>
-            <div>
-              <label for="telefono"></label><br>
-              <input type="tel" name="Telefono" id="telefono" placeholder="(*) Telefono" required>
-            </div>
-            <div>
-              <label for="asunto"></label><br>
-              <input type="text" name="Asunto" id="asunto" placeholder="Asunto" >
-            </div>
-            <div>
-              <label for="Mensaje"></label><br>
-              <textarea name="mensaje" rows="5" cols="20" id="Mensaje" placeholder="(*) Mensaje"></textarea>
-            </div>
-            <div>
-              <label for="Terminos"></label><br>
-              <div> Al enviar este formaulario, he leído y acepto la política de privacidad de Catsa Mexico Sa de Cv (*)</div>
-              <input type="checkbox" name="acepta" id="Terminos" value="1" />
-            </div>            
-            <div>
-              <input type="submit" value="Enviar">
-            </div>
-          </fieldset>
         </form>
-      </div>
-    </section>
-    <footer class="contenedorFooter">
-      <div class="contenedorPhone" >
+    </div>
+</div>
+<footer class="contenedorFooter">
+    <div class="contenedorPhone">
         <h3 class="textFooterH3">TELÉFONO</h3>
         <ul class="textFooterUL">
-          <li>
-            <span class="icon-phone"></span> <a href="tel:+525547442645">(+52)55 4744-2645</a>
-          </li>
-          <li>
-            <span class="icon-phone"></span> <a href="tel:+525547442645">(+52)55 7931–6335</a>
-          </li>
+            <li>
+                <span class="icon-phone"></span> <a href="tel:+525547442645">(+52)55 4744-2645</a>
+            </li>
+            <li>
+                <span class="icon-phone"></span> <a href="tel:+525547442645">(+52)55 7931–6335</a>
+            </li>
         </ul>
-      </div>
-      <div class="contenedorFooterBorder">
+    </div>
+    <div class="contenedorFooterBorder">
         <h3 class="textFooterH3">CORREO</h3>
         <div>
-          <form class="contenedorMail" action="contacto.html">
-            <span class="icon-envelop"></span>
-            <button class="buttonMail" type="submit">Contactanos</button>
-          </form>
+            <form class="contenedorMail" action="contacto.html">
+                <span class="icon-envelop"></span>
+                <button class="buttonMail" type="submit">Contactanos</button>
+            </form>
         </div>
-      </div>
-      <div class="contenedorOfficer">
+    </div>
+    <div class="contenedorOfficer">
         <div>
-          <span class="icon-office"></span>|
+            <span class="icon-office"></span>|
         </div>
         <div>
-          <p class="textFooterOfficer">CONCRETOS ASFALTICOS TECAMAC, S.A. DE C.V.</p>
+            <p class="textFooterOfficer">CONCRETOS ASFALTICOS TECAMAC, S.A. DE C.V.</p>
         </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+</body>
 </html>

@@ -297,6 +297,101 @@ section .imgAboutPosition {
     white-space: pre;
     text-align: center;
 }
+h4 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 3%;
+}
+.gridContainerContac {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+". itemContacto1 itemContacto2 ."
+". itemContacto3 itemContacto4 ."
+" . itemContacto5 itemContacto5 ."
+". itemContacto6 itemContacto6 ."
+". itemContacto7 itemContacto7 ."
+". . itemContacto8 ."
+;
+}
+.itemName1{
+    grid-area: itemContacto1;
+    width: 100%;
+    padding-bottom: 1%;
+
+}
+.itemLastName{
+    grid-area: itemContacto2;
+    width: 100%;
+    padding-bottom: 1%;
+
+}
+.itemEmail{
+    grid-area: itemContacto3;
+    width: 100%;
+    padding-bottom: 1%;
+
+
+}
+.itemPhone{
+    grid-area: itemContacto4;
+    width: 100%;
+    padding-bottom: 1%;
+
+
+}
+.itemAsunto{
+    grid-area: itemContacto5;
+    width: 100%;
+    padding-bottom: 1%;
+
+
+}
+.itemMensaje{
+    grid-area: itemContacto6;
+    width: 100%;
+    padding-bottom: 1%;
+
+
+}
+.itemTerminos{
+    grid-area: itemContacto7;
+    width: 100%;
+    padding-bottom: 3%;
+
+}
+.itemSubmit{
+    grid-area: itemContacto8;
+    width: 100%;
+
+}
+.itemName1Placeholder{
+    width: 95%;
+}
+
+.itemLastName1Placeholder{
+    width: 90%;
+}
+.itemLastEmailPlaceholder{
+    width: 95%;
+}
+.itemLastPhonePlaceholder{
+    width: 90%;
+}
+.itemAsuntoPlaceholder{
+    width: 95%;
+}
+
+.itemMensajePlaceholder{
+    width: 95%;
+    height: 50vh;
+}
+
+.itemTerminosTexto{
+    width: 95%;
+}
+
 /*Comienza el footer*/
 
 .contenedorFooter{
