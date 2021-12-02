@@ -297,7 +297,7 @@ section .imgAboutPosition {
     white-space: pre;
     text-align: center;
 }
-h4 {
+.h4Contact {
     text-align: center;
     font-size: 3em;
     padding-bottom: 3%;
