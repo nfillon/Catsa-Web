@@ -302,6 +302,47 @@ section .imgAboutPosition {
     font-size: 3em;
     padding-bottom: 3%;
 }
+/*HTML Proyecto*/
+.gridProyectos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+            ". . itemH3Proyecto ."
+            ". . itemH4Proyecto ."
+            "itemH519 itemUl219 .  itemProyectoFoto1"
+            "itemH519 itemUl219 .  itemProyectoFoto1"
+            "itemH518 itemUl218 .  itemProyectoFoto2"
+            "itemH518 itemUl218 .  itemProyectoFoto2"
+}
+.itemH3Pro19{
+    grid-area: itemH3Proyecto ;
+}
+.itemH4Pro19{
+    grid-area: itemH4Proyecto ;
+}
+.itemH52019{
+    grid-area: itemH519;
+}
+
+.itemH52018{
+    grid-area: itemH518;
+}
+.itemUl2019 {
+    grid-area: itemUl219;
+}
+.itemUl2018 {
+    grid-area: itemUl218;
+}
+.itemProyectoFoto1{
+    grid-area:itemProyectoFoto1 ;
+}
+.itemProyectoFoto2{
+    grid-area:itemProyectoFoto2 ;
+}
+
+
+/*HTML Contacto*/
 .gridContainerContac {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -331,40 +372,30 @@ section .imgAboutPosition {
     grid-area: itemContacto3;
     width: 100%;
     padding-bottom: 1%;
-
-
 }
 .itemPhone{
     grid-area: itemContacto4;
     width: 100%;
     padding-bottom: 1%;
-
-
 }
 .itemAsunto{
     grid-area: itemContacto5;
     width: 100%;
     padding-bottom: 1%;
-
-
 }
 .itemMensaje{
     grid-area: itemContacto6;
     width: 100%;
     padding-bottom: 1%;
-
-
 }
 .itemTerminos{
     grid-area: itemContacto7;
     width: 100%;
     padding-bottom: 3%;
-
 }
 .itemSubmit{
     grid-area: itemContacto8;
     width: 100%;
-
 }
 .itemName1Placeholder{
     width: 95%;
@@ -416,8 +447,8 @@ section .imgAboutPosition {
     text-align: center;
     padding-bottom: 3%;
 }
-.icon-phone:before {
-    padding-right: 5%;
+.fa-phone-alt:before {
+    padding-right: 10%;
     content: "\e900";
     font-size: 24px;
     color: blueviolet;
@@ -432,31 +463,56 @@ section .imgAboutPosition {
     justify-content: space-evenly;
     padding-bottom: 5%;
 }
+
 .contenedorFooterBorder {
     width: 33%;
     border-left: 2px solid blueviolet;
     border-right: 2px solid blueviolet;
 }
 
-.buttonMail {
-    border-radius: 10%;
-    width: 30%;
-}
-.buttonMail:hover {
-    background-color: blueviolet;
-    border-radius: 25%;
-}
+/*.buttonMail {*/
+/*    border-radius: 10%;*/
+/*    width: 30%;*/
+/*}*/
+/*.buttonMail:hover {*/
+/*    background-color: blueviolet;*/
+/*    border-radius: 25%;*/
+/*}*/
 /*.buttonMail:active {*/
 /*    background-color: blueviolet;*/
 /*    border-radius: 10%;*/
 /*    !*box-shadow: 0 5px #666;*!*/
 /*    transform: translateY(5px);*/
 /*}*/
-.icon-envelop:before {
+
+.fa-envelope:before {
     content: "\e945";
     font-size: 48px;
     color: blueviolet;
     padding-left: 15%;
+}
+
+/*button MAIL*/
+
+.btn1 {
+    will-change: transform;
+    transition: transform 450ms;
+}
+.btn1:hover {
+    transition: transform 125ms;
+    transform: translateY(-10px);
+}
+
+.btn1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 25%;
+    border: none;
+    background: blueviolet;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
 }
 /*Div Officer*/
 .contenedorOfficer{
@@ -468,7 +524,7 @@ section .imgAboutPosition {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.icon-office:before {
+.fa-building:before {
     content: "\e903";
     font-size: 48px;
     color: blueviolet;
