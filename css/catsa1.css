@@ -6,52 +6,37 @@
 
 /* Contenedor Flex para toda la pagina */
 
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 /* Fix conetenedor para el hedear */
-
-nav {
+.backheader {
     background-image: url("../images/backgroundHeader1.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px;
-    height: 700px;
+    /*padding: 90px;*/
+    height: 80vh;
     width: 100%;
 }
 
 
-/* Fix conetenedor para el hedear en la Nav */
-.contenedorNav {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* Fix conetenedor para el hedear en la li (Botonera) */
-
-.contenedorDivUl {
-    /*margin-top: 3%;*/
-    align-content: flex-start;
-}
-
-ul li {
-    list-style: none;
-}
-
 nav a {
-    color: #fff;
     text-decoration: none;
+    color: #ffffff;
     padding: 10px 20px 10px 20px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.587);
 }
-
 nav a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
+
+
 /* Comienzan los Section */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .contenedorSection1 {
     justify-content: space-between;
@@ -143,10 +128,6 @@ section .imgAboutPosition {
     width: 40%;
     height: auto;
 }
-/*contenedorInfraInternal0 {*/
-/*    width: 50%;*/
-/*    height: 100%;*/
-/*}*/
 
 .contenedorInfraInternal {
     width: 50%;
@@ -423,7 +404,11 @@ section .imgAboutPosition {
     width: 95%;
 }
 
+
 /*Comienza el footer*/
+ul li {
+    list-style: none;
+}
 
 .contenedorFooter{
     width: 100%;
@@ -447,10 +432,12 @@ section .imgAboutPosition {
     text-align: center;
     padding-bottom: 3%;
 }
-.fa-phone-alt:before {
-    padding-right: 10%;
-    content: "\e900";
-    font-size: 24px;
+.fa-phone-alt {
+
+    /*padding-right: 10%;*/
+    /*content: "\e900";*/
+    width: 16px;
+    height: 16px;
     color: blueviolet;
 }
 
@@ -466,24 +453,8 @@ section .imgAboutPosition {
 
 .contenedorFooterBorder {
     width: 33%;
-    border-left: 2px solid blueviolet;
-    border-right: 2px solid blueviolet;
+    border: 1px solid blueviolet;
 }
-
-/*.buttonMail {*/
-/*    border-radius: 10%;*/
-/*    width: 30%;*/
-/*}*/
-/*.buttonMail:hover {*/
-/*    background-color: blueviolet;*/
-/*    border-radius: 25%;*/
-/*}*/
-/*.buttonMail:active {*/
-/*    background-color: blueviolet;*/
-/*    border-radius: 10%;*/
-/*    !*box-shadow: 0 5px #666;*!*/
-/*    transform: translateY(5px);*/
-/*}*/
 
 .fa-envelope:before {
     content: "\e945";
@@ -517,6 +488,7 @@ section .imgAboutPosition {
 /*Div Officer*/
 .contenedorOfficer{
     margin-top: 3%;
+    padding-top: 3%;
     padding-bottom: 5%;
     display: flex;
     width: 33%;
@@ -529,17 +501,12 @@ section .imgAboutPosition {
     font-size: 48px;
     color: blueviolet;
 }
-.textFooterOfficer{
-    padding-top: 5%;
-    font-size: 1em;
-}
 .textFooterH3 {
     padding-top: 3%;
     padding-bottom: 3%;
     color: blueviolet;
     text-align: center;
 }
-
 
 
 
@@ -604,5 +571,78 @@ section .imgAboutPosition {
     .contenedorAbout {
         width: 100%;
     }
+
+}
+
+@media (max-width: 768px) {
+    .contenedorAboutInternal {
+        width: 100%;
+    }
+    .contenedorAbout {
+        width: 100%;
+    }
+    .contenedorAbout0 {
+        /* justify-content: space-between; */
+        width: 50%;
+        /* text-align: center; */
+    }
+    .divWidth {
+        width: 100%;
+    }
+
+    .imgAbout {
+        width: 50%;
+        height: 100%;
+    }
+
+
+    .textBanner {
+        font-size: 1em;
+    }
+
+    .textAboutH3 {
+        /*text-align: ;*/
+        font-size: 0.9em;
+    }
+
+    .textAbout2 {
+        font-size: 0.8em;
+    }
+
+    .textAboutH1 {
+        font-size: 1.1em;
+    }
+
+    /* .contenedorPhone {
+        width: 100%;
+    }
+
+    .buttonMail {
+        font-size: 0.7em;
+        width: 30%;
+    }
+
+    .contenedorFooterBorder {
+        width: 100%;
+        border-top: 2px solid blueviolet;
+        border-bottom: 2px solid blueviolet;
+    }
+
+    .contenedorOfficer {
+        width: 100%;
+    }
+
+    .icon-office:before {
+        padding-left: 90%;
+    }
+
+    .textFooterOfficer {
+        padding-left: 30%;
+        font-size: 0.8em;
+    }
+
+    .contenedorAbout {
+        width: 100%;
+    } */
 
 }
