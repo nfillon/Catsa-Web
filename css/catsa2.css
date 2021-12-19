@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 
 
@@ -40,9 +41,7 @@ nav a:hover {
 
 /* INDEX */
 
-.imgAbout {
-    object-position: ;
-}
+
 
 .textAboutH3 {
     padding-top: 15%;
@@ -107,7 +106,7 @@ ul li {
 }
 .textFooterUL {
     text-align: center;
-    padding-bottom: 3%;
+    /*padding-bottom: 3%;*/
 }
 .fa-phone-alt {
 
@@ -122,10 +121,12 @@ ul li {
 .contenedorMail{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 40%;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .contenedorFooterBorder {
@@ -140,6 +141,13 @@ ul li {
 
 /*button MAIL*/
 
+.bi-envelope{
+    padding-right: 3%;
+    align-items: center;
+    font-size: 54px;
+    color: blueviolet;
+}
+
 .btn1 {
     will-change: transform;
     transition: transform 450ms;
@@ -148,7 +156,9 @@ ul li {
     transition: transform 125ms;
     transform: translateY(-10px);
 }
-
+.buttonCenter{
+    padding-bottom: 5%;
+}
 .btn1 {
     width: 100px;
     height: 50px;
@@ -160,18 +170,42 @@ ul li {
     font-weight: 500;
     line-height: 1;
 }
+/*Div Redes Sociales*/
+.socialAlian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.bi-facebook{
+    font-size: 54px;
+    color: blueviolet;
+}
+.bi-twitter{
+    font-size: 54px;
+    color: blueviolet;
+}
+.bi-instagram{
+    font-size: 54px;
+    color: blueviolet;
+}
+
 /*Div Officer*/
 .contenedorOfficer{
-    margin-top: 3%;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-bottom: 5%;
     display: flex;
     width: 33%;
-    height: 100%;
+    height: 70%;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
 }
 .bi-building {
+    font-size: 54px;
+    color: blueviolet;
+}
+.bi-diagram-3-fill {
     font-size: 54px;
     color: blueviolet;
 }
