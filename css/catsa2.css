@@ -132,12 +132,29 @@ nav a:hover {
     text-align: justify-all;
 }
 
+.h3Expiencias {
+    padding-top: 2%;
+    color: blueviolet;
+
+}
+
+.imgExpiencias {
+
+}
+/*Contact|*/
+.h4Contact {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 3%;
+}
+
 /*Comienza el footer*/
 ul li {
     list-style: none;
 }
 
 .contenedorFooter{
+    margin-top: 5%;
     background-color: #dfe6ed
 }
 
@@ -257,5 +274,23 @@ ul li {
     color: blueviolet;
     text-align: center;
 }
+
+@media(min-width: 768px) {
+    #hidenBT {
+        display: none;
+    }
+
+}
+
+@media(max-width: 767px) {
+    #listaExperiencias {
+        display: none;
+    }
+
+}
+
+
+
+
 
 
