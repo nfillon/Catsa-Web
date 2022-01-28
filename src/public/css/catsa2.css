@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 /* Contenedor Flex para toda la pagina */
+/*font*/
+.tipoOxygen{
+    font-family: 'Oxygen', sans-serif;
+}
 
 .backheader {
     background-image: url("../images/background1.jpg");
@@ -36,14 +37,12 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-
 .ulBorder{
     margin-left: 1%;
     border: 1px solid rgba(9,9,9,0.98);
     margin-bottom: 2%;
     padding-bottom: 1%;
 }
-
 /* INDEX */
 
 .textAboutH3 {
@@ -118,19 +117,12 @@ nav a:hover {
 .h4Contact {
     text-align: center;
     font-size: 3em;
-    padding-bottom: 3%;
 }
 
 /*Comienza el footer*/
 
 .contenedorFooter{
     background-color: #dfe6ed
-}
-
-.fa-phone-alt {
-    width: 16px;
-    height: 16px;
-    color: blueviolet;
 }
 
 /*Div Mail*/
@@ -141,8 +133,6 @@ nav a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .contenedorFooterBorder {
@@ -164,16 +154,13 @@ nav a:hover {
     transition: transform 125ms;
     transform: translateY(-10px);
 }
-.buttonCenter{
-    padding-bottom: 5%;
-}
 .btn1 {
     width: 100px;
     height: 50px;
     border-radius: 25%;
     border: none;
     background: blueviolet;
-    color: black;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 500;
     line-height: 1;
@@ -188,13 +175,9 @@ nav a:hover {
 
 /*Div Officer*/
 .contenedorOfficer{
-    padding-top: 1%;
     padding-bottom: 5%;
-    display: flex;
     width: 33%;
     height: 70%;
-    flex-direction: row;
-    justify-content: space-evenly;
     text-align: center;
 }
 .iconsColor {
@@ -205,18 +188,18 @@ nav a:hover {
 .textFooter {
     color: blueviolet;
 }
+/*booton*/
+#btn-back-to-top {
+    position: fixed;
+    background-color: slateblue;
+    border: slateblue;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
 
 @media(min-width: 768px) {
     .hidenBT {
         display: none;
     }
-
 }
-
-
-
-
-
-
-
-

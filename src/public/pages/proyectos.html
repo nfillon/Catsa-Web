@@ -9,6 +9,9 @@
           content="Catsa- Somos una constructora con 14 años de experiencia; terracerías, diseño, preconstrucción, construcción, carrateras, aeropuertos">
     <title>Catsa Web Proyectos</title>
     <link rel="stylesheet" href="../css/catsa2.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
@@ -49,7 +52,7 @@
                                     class="nav-link active"
                                     style="color: white"
                                     aria-current="page"
-                                    href="../index.html"
+                                    href="../../index.html"
                             >Nosotros</a>
                         </li>
                         <li class="nav-item">
@@ -86,7 +89,13 @@
         </nav>
     </header>
 </div>
-<section class="container-fluid">
+<button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+</button>
+<section class="container-fluid tipoOxygen">
     <div class="row justify-content-center">
         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
             <h3 class="text-sm-center text-md-center text-lg-center text-xl-center text-center fs-2"> PROYECTOS</h3>
@@ -104,7 +113,7 @@
                             </button>
                         </h2>
 
-                        <ul class="list-group border-0 accordion-collapse collapse show" id="panelsStayOpen-2019"
+                        <ul class="list-group border-0 accordion-collapse collapse show tipoOxygen" id="panelsStayOpen-2019"
                             aria-labelledby="panelsStayOpen-2019">
                             <li class=" list-group-item border-0 bi bi-bookmark-check-fill">
                                 Rehabilitación de la Pista 08-26 del Aeropuerto Internacional de Villahermosa..
@@ -337,19 +346,19 @@
                     <div class="carousel-item active">
                         <img
                                 src="../images/avion1.png"
-                                class="d-block img-responsive w-50 mx-auto"
+                                class="d-block img-responsive w-50 mx-auto rounded-circle"
                                 alt="avion"/>
                     </div>
                     <div class="carousel-item">
                         <img
                                 src="../images/avion2.jpg"
-                                class="d-block img-responsive w-50 mx-auto "
+                                class="d-block img-responsive w-50 mx-auto rounded-circle"
                                 alt="avion"/>
                     </div>
                     <div class="carousel-item">
                         <img
                                 src="../images/avion3.png"
-                                class="d-block img-responsive w-50 mx-auto"
+                                class="d-block img-responsive w-50 mx-auto rounded-circle"
                                 alt="avion"/>
                     </div>
                 </div>
@@ -379,27 +388,28 @@
     <footer class="row p-1 contenedorFooter">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 contenedorFooterBorder">
             <div class="socialAlian">
-                <h5 class="textFooter fs-3">NUESTRAS REDES</h5>
+                <h5 class="textFooter fs-5">NUESTRAS REDES</h5>
                 <div class="btn-group " role="group">
-                    <a class="btn btn-outline-primary btn-sm" role="button" href="https://www.facebook.com/"> <i
-                            class="bi bi-facebook iconsColor"></i></a>
-                    <a class="btn btn-outline-primary btn-sm" role="button" href="https://twitter.com/"> <i
-                            class="bi bi-twitter iconsColor"></i></a>
-                    <a class="btn btn-outline-primary btn-sm" role="button" href="https://www.instagram.com/"> <i
-                            class="bi bi-instagram iconsColor"></i></a>
+                    <a class="btn btn-outline-primary btn-sm " role="button" href="https://www.facebook.com/"> <i
+                            class="bi bi-facebook iconsColor fs-4"></i></a>
+                    <a class="btn btn-outline-primary btn-sm " role="button" href="https://twitter.com/"> <i
+                            class="bi bi-twitter iconsColor fs-4"></i></a>
+                    <a class="btn btn-outline-primary btn-sm " role="button" href="https://www.instagram.com/"> <i
+                            class="bi bi-instagram iconsColor fs-4"></i></a>
                 </div>
             </div>
             <!--Starting collapse-->
-            <div class="row contenedorFooter">
-                <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            <div class="row" >
+                <p class="text-center" >
+                    <button class="btn btn-primary btn-rounded" style="background-color: blueviolet; border-color: blueviolet" type="button" data-bs-toggle="collapse"
                             data-bs-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">
                         Contactenos
+                        <i class="bi bi-arrow-right-short"></i>
                     </button>
                 </p>
                 <div class="collapse" id="footerCollapse">
-                    <div class="row contenedorFooter">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6  contenedorFooterBorder">
+                    <div class="row ">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6  ">
                             <div class="col-12">
                                 <h3 class="textFooter text-center pb-2 ">Contactos</h3>
                             </div>
@@ -426,7 +436,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 contenedorFooterBorder contenedorOfficer ">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6  contenedorOfficer ">
                             <div>
                                 <div>
                                     <i class="bi bi-building iconsColor"></i>
@@ -436,13 +446,15 @@
                                 <h5 class="textFooter">Nuestro Sitio</h5>
                                 <div class="row">
                                     <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="../index.html">Nosotros</a></li>
+                                        <li class="list-inline-item"><a href="../../index.html">Nosotros</a></li>
                                         <li class="list-inline-item"><a
                                                 href="infrastructura.html">Infrastructura</a>
                                         </li>
-                                        <li class="list-inline-item"><a href="experiencia.html">Experiencia</a>
+                                        <li class="list-inline-item"><a
+                                                href="experiencia.html">Experiencia</a>
                                         </li>
-                                        <li class="list-inline-item"><a href="proyectos.html">Proyectos</a></li>
+                                        <li class="list-inline-item"><a href="proyectos.html">Proyectos</a>
+                                        </li>
                                         <li class="list-inline-item"><a href="contacto.html">Contacto</a></li>
                                     </ul>
                                 </div>
@@ -454,6 +466,39 @@
         </div>
     </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('.btn').click(function() {
+            $(this).find('i').toggleClass('fas fa-plus fas fa-minus')
+        });
+</script>
+<script>
+   //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
