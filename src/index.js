@@ -1,14 +1,11 @@
-
 const express = require('express');
 const app = express();
+const path = require('path');
 
-const past = require('path')
+app.use(express.urlencoded({extended: false}));
+app.use(require('./routes/index'));
+app.use(express.static(path.join(__dirname, 'public' )));
 
-
-app.user(express.static(path.join(__dirname, '../pages/contacto.html' )))
-
-
-app.listen(3000, () => ){
-    console.log('Server on port 3000')
-
-}
+app.listen(3000, () => {
+    console.log('Server on port 3000');
+});
