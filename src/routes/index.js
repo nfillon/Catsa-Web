@@ -3,6 +3,7 @@ const nodemailer =  require('nodemailer');
 const {google} = require('googleapis');
 // const transporter = require("express");
 const express = require("express");
+const path = require("path");
 const router = express.Router();
 
 router.post("/send-email", (req, res) => {
@@ -48,7 +49,7 @@ router.post("/send-email", (req, res) => {
             const mailOptions = {
                 from: 'CatsaWEb <info@catsaweb.com>',
                 to: 'info@catsaweb.com>',
-                subject: "Prueba",
+                subject: "Mail CatsaWeb Contactos",
                 html: contentHTML,
             };
             const result = await transporter.sendMail(mailOptions);
@@ -59,7 +60,7 @@ router.post("/send-email", (req, res) => {
     }
 
     sendMail()
-        .then((result) => res.status(200).send('<link href="../public/pages/contacto.html">'))
+        .then((result) => res.status(200).sendFile(path.join(__dirname, '../public/pages/contacto.html')))
         .catch((error) => console.log(error.message));
 });
 
