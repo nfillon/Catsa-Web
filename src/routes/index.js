@@ -20,10 +20,10 @@ router.post("/send-email", (req, res) => {
      <p>${mensaje}</p> `;
 
 
-    const CLIENT_ID = '882392415741-34b5nbe1glo6fv4stc570mglr51l8o42.apps.googleusercontent.com';
-    const CLIENT_SECRET = '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';
+    const CLIENT_ID = 'completar cuando este en el server';
+    const CLIENT_SECRET = 'completar cuando este en el server';
     const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
-    const REFRESH_TOKEN = '1//04Eppmgie1MmRCgYIARAAGAQSNwF-L9IrLa81hdTrBccSLDT_A8z68KLODEyKdnJTbwMxL9c5qDvAikYSPNYbZHURf2Zjlk6Uofk';
+    const REFRESH_TOKEN = 'completar cuando este en el server';
 
     const oAuth2Cliente = new google.auth.OAuth2(
         CLIENT_ID,
